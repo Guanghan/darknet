@@ -57,7 +57,7 @@ for txt_name in txt_name_list:
     txt_path = mypath + txt_name
     print("Input:" + txt_path)
     txt_file = open(txt_path, "r")
-    lines = txt_file.read().split('\r\n')   #for ubuntu, use "\r\n" instead of "\n"
+    lines = txt_file.read().splitlines()
     
     """ Open output text files """
     txt_outpath = outpath + txt_name
