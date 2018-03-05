@@ -37,6 +37,7 @@ outpath = "BBox-Label-Tool\Labels\convert\\"
 
 cls = "stopsign" #--------------------------------------------------------------------------Also change class name here
 if cls not in classes:
+    print("Could not find class in list of classes, please edit line 38");
     exit(0)
 cls_id = classes.index(cls)
 
