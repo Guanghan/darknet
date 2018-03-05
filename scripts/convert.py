@@ -5,7 +5,6 @@ Created on Wed Dec  9 14:55:43 2015
 This script is to convert the txt annotation files to appropriate format needed by YOLO 
 
 @author: Guanghan Ning
-@author: Modified by techied on Github to support \n's and incompetent people like myself.
 Email: gnxr9@mail.missouri.edu
 """
 
