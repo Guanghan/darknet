@@ -5,7 +5,7 @@ Created on Wed Dec  9 14:55:43 2015
 This script is to convert the txt annotation files to appropriate format needed by YOLO 
 
 @author: Guanghan Ning
-@author: Modified by techied on Github to support \n's
+@author: Modified by techied on Github to support \n's and incompetent people like myself.
 Email: gnxr9@mail.missouri.edu
 """
 
@@ -13,7 +13,7 @@ import os
 from os import walk, getcwd
 from PIL import Image
 
-classes = ["powercube"]
+classes = ["stopsign"] #----------------------------------------------------Change class name[s] here
 
 def convert(size, box):
     dw = 1./size[0]
@@ -33,9 +33,9 @@ def convert(size, box):
 
 """ Configure Paths"""   
 mypath = "Labels\\001\\"
-outpath = "C:\Users\slurp\BBox-Label-Tool\Labels\convert\\"
+outpath = "BBox-Label-Tool\Labels\convert\\"
 
-cls = "powercube"
+cls = "stopsign" #--------------------------------------------------------------------------Also change class name here
 if cls not in classes:
     exit(0)
 cls_id = classes.index(cls)
