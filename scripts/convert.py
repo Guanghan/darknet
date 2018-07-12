@@ -26,8 +26,7 @@ def convert(size, box):
     y = y*dh
     h = h*dh
     return (x,y,w,h)
-    
-    
+
 """-------------------------------------------------------------------""" 
 
 """ Configure Paths"""   
@@ -95,6 +94,11 @@ for txt_name in txt_name_list:
             bb = convert((w,h), b)
             print(bb)
             txt_outfile.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
+        else:
+            elems = line.split(' ')
+            print("class")
+            #support for different classes
+            cls_id=elems[0]
 
     """ Save those images with bb into list"""
     if(ct != 0):
